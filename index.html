@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Carta de amor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1: linear-gradient(135deg,#0f172a 0%, #0b1220 40%, #3b0d1a 100%);
+      --card: rgba(255,255,255,0.06);
+      --glass: rgba(255,255,255,0.06);
+      --accent: #ffd166;
+      --muted: rgba(255,255,255,0.75);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; font-family:Montserrat,system-ui,Arial,sans-serif; background:var(--bg1); color: #fff; display:flex; align-items:center; justify-content:center; padding:32px;
+    }
+    .card{
+      width:100%; max-width:820px; background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.6); overflow:hidden; border:1px solid rgba(255,255,255,0.06);
+    }
+    .banner{
+      display:flex; gap:18px; align-items:center; padding:28px; background:linear-gradient(90deg, rgba(255,209,102,0.06), rgba(255,255,255,0));
+    }
+    .logo{
+      width:84px; height:84px; border-radius:18px; display:grid; place-items:center; background:linear-gradient(135deg,#ffb703,#fb8500); flex:0 0 84px; box-shadow:0 6px 18px rgba(251,133,0,0.15);
+    }
+    .logo svg{filter:drop-shadow(0 6px 12px rgba(0,0,0,0.25));}
+    .banner h1{font-family: 'Playfair Display', serif; margin:0; font-size:20px; letter-spacing:0.2px}
+    .banner p{margin:2px 0 0 0; opacity:0.85; font-size:13px}.content{padding:34px 36px 46px; line-height:1.6}
+.saludo{font-family:'Playfair Display', serif; font-size:22px; margin:0 0 8px}
+.cuerpo{color:var(--muted); font-size:16px; margin:0 0 18px}
+.cierre{margin-top:14px; font-size:15px}
+
+.heart{
+  display:inline-block; vertical-align:middle; margin:0 6px; transform:translateY(-2px);
+}
+.signature{margin-top:22px; display:flex; align-items:center; gap:12px}
+.sig-name{font-weight:700}
+
+.accent-line{height:6px; background:linear-gradient(90deg,#ffd166,#ff8fab); border-radius:6px; margin:18px 0}
+
+@media (max-width:520px){
+  .banner{padding:18px}
+  .content{padding:22px}
+}
+
+  </style>
+</head>
+<body>
+  <article class="card" role="article" aria-label="Carta romántica">
+    <header class="banner">
+      <div class="logo" aria-hidden>
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 21s-7-4.35-9.09-7.09C-0.45 8 6 3 12 8c6-5 12.45 0 9.09 5.91C19 16.65 12 21 12 21z" fill="#fff" opacity="0.9" />
+        </svg>
+      </div>
+      <div>
+        <h1>Para mi persona favorita</h1>
+        <p>Un mensaje para enviar en cualquier momento — cuando quieras hacerle sonreír.</p>
+      </div>
+    </header><div class="content">
+  <p class="saludo">Mi amor,</p>
+
+  <p class="cuerpo">Llevo tu nombre latiéndome en el pecho y no puedo guardar más este silencio. Todo en mí pide que te diga lo que siento: cuánto te amo, cuánto te deseo y cuánto significas en mi vida. Cada pensamiento tuyo me envuelve como una luz cálida que nunca se apaga.</p>
+
+  <p class="cuerpo">A veces me sorprendo recordando tu risa, la manera en que tus ojos me buscan o cómo tu voz transforma cualquier día gris en algo lleno de color. Eres la calma que me sostiene y el fuego que me despierta: a tu lado todo cobra sentido y cada instante se vuelve importante.</p>
+
+  <div class="accent-line" aria-hidden></div>
+
+  <p class="cuerpo">Amarte se siente tan natural como respirar. Me encanta tu fuerza, tu ternura, esa capacidad que tienes de seguir adelante aunque te duela. Me derrites con un gesto, con una mirada, con esa forma de ser que me roba el aire. Y al mismo tiempo, me das paz: me haces creer que todo estará bien mientras estemos juntos.</p>
+
+  <p class="cuerpo">Quisiera tomarte de la mano ahora mismo, acercarte a mi pecho y decirte sin prisa todo lo que guardo: que me haces falta, que mi mundo se acomoda contigo, que tu amor me impulsa y me calma a la vez. No hay duda en mi corazón, solo certezas y ganas: ganas de cuidarte, de mimarte, de besarte hasta el amanecer, de construir sueños contigo.</p>
+
+  <p class="cuerpo">Gracias por existir tan bonito. Gracias por dejarme entrar en tu vida y por despertar emociones que creía dormidas. Cada día contigo es un nuevo regalo que no dejo de agradecer. Te quiero con todas mis fuerzas y mi cariño por ti crece, se enciende y se entrega sin reservas.</p>
+
+  <p class="cierre">Con el alma encendida por ti <span class="heart">❤️</span></p>
+
+  <div class="signature">
+    <div>
+      <div class="sig-name">Tu hombre</div>
+      <div style="font-size:13px; opacity:0.85">El que no deja de pensarte ni un solo instante</div>
+    </div>
+  </div>
+</div>
+
+  </article>
+</body>
+</html>
